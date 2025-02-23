@@ -19,6 +19,6 @@
   "homepage": "https://github.com/KraetSpg/willhaben_verkaufspreisrechner_service#readme",
   "dependencies": {
     "express": "^4.21.2",
-    "willhaben": "^0.2.1"
+    "willhaben": "github:KraetSpg/willhaben_api"
   }
 }
