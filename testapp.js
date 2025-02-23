@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     willhaben.new()
-    .category(willhaben.getCategories["immobilien"])
+    .category(willhaben.getCategories["abenteuer"])
     .count(100)
     .search().then(json => {
         res.header("Access-Control-Allow-Origin", allowedOrigins);
@@ -19,4 +19,4 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log(`App is listening http://localhost:${port}`)
-  })
+})
