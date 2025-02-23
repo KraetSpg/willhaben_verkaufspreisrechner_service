@@ -11,12 +11,6 @@ let allowedOrigins = ['*']; // INSERT RIGHT DOMAIN HERE
 
 app.use(express.json());
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", allowedOrigins);
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
 app.get('/api/:category/:condition/:searchtext', (req, res) => {
 
   if (req.params.searchtext == "none") { // if no searchtext is entered
