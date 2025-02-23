@@ -16,3 +16,7 @@ app.get('/', (req, res) => {
         res.send(json)
     })
 })
+
+app.listen(port, () => {
+    console.log(`App is listening http://localhost:${port}`)
+  })
