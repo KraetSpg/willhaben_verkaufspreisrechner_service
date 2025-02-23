@@ -1,0 +1,19 @@
+{
+  "name": "willhaben_verkaufspreisrechner_service",
+  "version": "1.0.0",
+  "description": "service to handle requests from the willhaben verkaufpreis rechner frontend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KraetSpg/willhaben_verkaufspreisrechner_service.git"
+  },
+  "author": "kraet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KraetSpg/willhaben_verkaufspreisrechner_service/issues"
+  },
+  "homepage": "https://github.com/KraetSpg/willhaben_verkaufspreisrechner_service#readme"
+}
