@@ -27,8 +27,7 @@ app.get('/api/:category/:condition/:searchtext', (req, res) => {
         .count(100)
         .search().then(json => {
           res.header("Access-Control-Allow-Origin", allowedOrigins);
-          res.json(json)
-          return;
+          res.send(json)
         })
     } else {
       willhaben.new()
@@ -37,8 +36,7 @@ app.get('/api/:category/:condition/:searchtext', (req, res) => {
         .count(100)
         .search().then(json => {
           res.header("Access-Control-Allow-Origin", allowedOrigins);
-          res.json(json)
-          return;
+          res.send(json)
         })
     }
   } else { // searchstring is selected
@@ -49,8 +47,7 @@ app.get('/api/:category/:condition/:searchtext', (req, res) => {
         .count(100)
         .search().then(json => {
           res.header("Access-Control-Allow-Origin", allowedOrigins);
-          res.json(json)
-          return;
+          res.send(json)
         })
     } else { // with condition
       willhaben.new()
@@ -60,8 +57,7 @@ app.get('/api/:category/:condition/:searchtext', (req, res) => {
         .count(100)
         .search().then(json => {
           res.header("Access-Control-Allow-Origin", allowedOrigins);
-          res.json(json)
-          return;
+          res.send(json)
         })
     }
   }
